@@ -2,6 +2,7 @@
 
 module carryGen(input [3:0]G,P, input Cin, output wire [3:0]C, output wire Cout);
 
+//Cx means the carry required to generate Sx(x bit of Sum)
 assign C[0] = Cin;
 assign C[1] = G[0] | (Cin  & P[0]);
 assign C[2] = G[1] | G[0]&P[1] | Cin &P[0]&P[1];

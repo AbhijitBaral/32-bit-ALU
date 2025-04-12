@@ -1,5 +1,5 @@
 $date
-	Mon Mar 24 13:36:16 2025
+	Wed Apr  2 17:41:35 2025
 $end
 $version
 	Icarus Verilog
@@ -7,299 +7,45 @@ $end
 $timescale
 	1s
 $end
-$scope module tb32bitAdder $end
-$var wire 32 ! S [31:0] $end
+$scope module tb4bitAdder $end
+$var wire 4 ! S [3:0] $end
 $var wire 1 " Cout $end
-$var reg 32 # A [31:0] $end
-$var reg 32 $ B [31:0] $end
+$var reg 4 # A [3:0] $end
+$var reg 4 $ B [3:0] $end
 $var reg 1 % Cin $end
 $scope module uut $end
-$var wire 32 & A [31:0] $end
-$var wire 32 ' B [31:0] $end
+$var wire 4 & A [3:0] $end
+$var wire 4 ' B [3:0] $end
 $var wire 1 % Cin $end
-$var wire 8 ( carry [7:0] $end
-$var wire 32 ) S [31:0] $end
+$var wire 4 ( G [3:0] $end
+$var wire 4 ) P [3:0] $end
+$var wire 4 * S [3:0] $end
 $var wire 1 " Cout $end
-$scope begin generate_cla[0] $end
-$var parameter 2 * i $end
-$scope begin genblk1 $end
-$scope module add $end
-$var wire 4 + A [3:0] $end
-$var wire 4 , B [3:0] $end
+$var wire 1 + CinMSB $end
+$var wire 4 , C [3:0] $end
+$scope module carryGen $end
 $var wire 1 % Cin $end
+$var wire 1 " Cout $end
 $var wire 4 - G [3:0] $end
 $var wire 4 . P [3:0] $end
-$var wire 4 / S [3:0] $end
-$var wire 1 0 Cout $end
-$var wire 4 1 C [3:0] $end
-$scope module carryGen $end
-$var wire 1 % Cin $end
-$var wire 1 0 Cout $end
-$var wire 4 2 G [3:0] $end
-$var wire 4 3 P [3:0] $end
-$var wire 4 4 C [3:0] $end
-$upscope $end
-$upscope $end
-$upscope $end
-$upscope $end
-$scope begin generate_cla[1] $end
-$var parameter 2 5 i $end
-$scope begin genblk1 $end
-$scope module add $end
-$var wire 4 6 A [3:0] $end
-$var wire 4 7 B [3:0] $end
-$var wire 1 8 Cin $end
-$var wire 4 9 G [3:0] $end
-$var wire 4 : P [3:0] $end
-$var wire 4 ; S [3:0] $end
-$var wire 1 < Cout $end
-$var wire 4 = C [3:0] $end
-$scope module carryGen $end
-$var wire 1 8 Cin $end
-$var wire 1 < Cout $end
-$var wire 4 > G [3:0] $end
-$var wire 4 ? P [3:0] $end
-$var wire 4 @ C [3:0] $end
-$upscope $end
-$upscope $end
-$upscope $end
-$upscope $end
-$scope begin generate_cla[2] $end
-$var parameter 3 A i $end
-$scope begin genblk1 $end
-$scope module add $end
-$var wire 4 B A [3:0] $end
-$var wire 4 C B [3:0] $end
-$var wire 1 D Cin $end
-$var wire 4 E G [3:0] $end
-$var wire 4 F P [3:0] $end
-$var wire 4 G S [3:0] $end
-$var wire 1 H Cout $end
-$var wire 4 I C [3:0] $end
-$scope module carryGen $end
-$var wire 1 D Cin $end
-$var wire 1 H Cout $end
-$var wire 4 J G [3:0] $end
-$var wire 4 K P [3:0] $end
-$var wire 4 L C [3:0] $end
-$upscope $end
-$upscope $end
-$upscope $end
-$upscope $end
-$scope begin generate_cla[3] $end
-$var parameter 3 M i $end
-$scope begin genblk1 $end
-$scope module add $end
-$var wire 4 N A [3:0] $end
-$var wire 4 O B [3:0] $end
-$var wire 1 P Cin $end
-$var wire 4 Q G [3:0] $end
-$var wire 4 R P [3:0] $end
-$var wire 4 S S [3:0] $end
-$var wire 1 T Cout $end
-$var wire 4 U C [3:0] $end
-$scope module carryGen $end
-$var wire 1 P Cin $end
-$var wire 1 T Cout $end
-$var wire 4 V G [3:0] $end
-$var wire 4 W P [3:0] $end
-$var wire 4 X C [3:0] $end
-$upscope $end
-$upscope $end
-$upscope $end
-$upscope $end
-$scope begin generate_cla[4] $end
-$var parameter 4 Y i $end
-$scope begin genblk1 $end
-$scope module add $end
-$var wire 4 Z A [3:0] $end
-$var wire 4 [ B [3:0] $end
-$var wire 1 \ Cin $end
-$var wire 4 ] G [3:0] $end
-$var wire 4 ^ P [3:0] $end
-$var wire 4 _ S [3:0] $end
-$var wire 1 ` Cout $end
-$var wire 4 a C [3:0] $end
-$scope module carryGen $end
-$var wire 1 \ Cin $end
-$var wire 1 ` Cout $end
-$var wire 4 b G [3:0] $end
-$var wire 4 c P [3:0] $end
-$var wire 4 d C [3:0] $end
-$upscope $end
-$upscope $end
-$upscope $end
-$upscope $end
-$scope begin generate_cla[5] $end
-$var parameter 4 e i $end
-$scope begin genblk1 $end
-$scope module add $end
-$var wire 4 f A [3:0] $end
-$var wire 4 g B [3:0] $end
-$var wire 1 h Cin $end
-$var wire 4 i G [3:0] $end
-$var wire 4 j P [3:0] $end
-$var wire 4 k S [3:0] $end
-$var wire 1 l Cout $end
-$var wire 4 m C [3:0] $end
-$scope module carryGen $end
-$var wire 1 h Cin $end
-$var wire 1 l Cout $end
-$var wire 4 n G [3:0] $end
-$var wire 4 o P [3:0] $end
-$var wire 4 p C [3:0] $end
-$upscope $end
-$upscope $end
-$upscope $end
-$upscope $end
-$scope begin generate_cla[6] $end
-$var parameter 4 q i $end
-$scope begin genblk1 $end
-$scope module add $end
-$var wire 4 r A [3:0] $end
-$var wire 4 s B [3:0] $end
-$var wire 1 t Cin $end
-$var wire 4 u G [3:0] $end
-$var wire 4 v P [3:0] $end
-$var wire 4 w S [3:0] $end
-$var wire 1 x Cout $end
-$var wire 4 y C [3:0] $end
-$scope module carryGen $end
-$var wire 1 t Cin $end
-$var wire 1 x Cout $end
-$var wire 4 z G [3:0] $end
-$var wire 4 { P [3:0] $end
-$var wire 4 | C [3:0] $end
-$upscope $end
-$upscope $end
-$upscope $end
-$upscope $end
-$scope begin generate_cla[7] $end
-$var parameter 4 } i $end
-$scope begin genblk1 $end
-$scope module add $end
-$var wire 4 ~ A [3:0] $end
-$var wire 4 !" B [3:0] $end
-$var wire 1 "" Cin $end
-$var wire 4 #" G [3:0] $end
-$var wire 4 $" P [3:0] $end
-$var wire 4 %" S [3:0] $end
-$var wire 1 " Cout $end
-$var wire 4 &" C [3:0] $end
-$scope module carryGen $end
-$var wire 1 "" Cin $end
-$var wire 1 " Cout $end
-$var wire 4 '" G [3:0] $end
-$var wire 4 (" P [3:0] $end
-$var wire 4 )" C [3:0] $end
-$upscope $end
-$upscope $end
-$upscope $end
+$var wire 4 / C [3:0] $end
 $upscope $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
 $comment Show the parameter values. $end
 $dumpall
-b111 }
-b110 q
-b101 e
-b100 Y
-b11 M
-b10 A
-b1 5
-b0 *
 $end
 #0
 $dumpvars
-b0 )"
-b0 ("
-b0 '"
-b0 &"
-b0 %"
-b0 $"
-b0 #"
-0""
-b0 !"
-b0 ~
-b0 |
-b0 {
-b0 z
-b0 y
-0x
-b0 w
-b0 v
-b0 u
-0t
-b0 s
-b0 r
-b0 p
-b0 o
-b0 n
-b0 m
-0l
-b0 k
-b0 j
-b0 i
-0h
-b0 g
-b0 f
-b0 d
-b0 c
-b0 b
-b0 a
-0`
-b0 _
-b0 ^
-b0 ]
-0\
-b0 [
-b0 Z
-b0 X
-b0 W
-b0 V
-b0 U
-0T
-b0 S
-b0 R
-b0 Q
-0P
-b0 O
-b0 N
-b0 L
-b0 K
-b0 J
-b0 I
-0H
-b0 G
-b0 F
-b0 E
-0D
-b0 C
-b0 B
-b0 @
-b0 ?
-b0 >
-b0 =
-0<
-b0 ;
-b0 :
-b0 9
-08
-b0 7
-b0 6
-b0 4
-b0 3
-b0 2
-b0 1
-00
 b0 /
 b0 .
 b0 -
 b0 ,
-b0 +
+0+
+b0 *
 b0 )
-bz0000000 (
+b0 (
 b0 '
 b0 &
 0%
@@ -309,481 +55,100 @@ b0 #
 b0 !
 $end
 #10
-b1000 !
-b1000 )
-b1000 /
-b111 .
-b111 3
-b1111 1
-b1111 4
-b101 ,
-b10 +
+b10 !
+b10 *
+b11 ,
+b11 /
+b1 )
+b1 .
 1%
-b101 $
-b101 '
+b1 $
+b1 '
+#20
+b10 !
+b10 *
+b0 ,
+b0 /
+b10 )
+b10 .
+0%
+b10 $
+b10 '
+#30
+b111 !
+b111 *
+b1 ,
+b1 /
+b110 )
+b110 .
+1%
+b100 $
+b100 '
 b10 #
 b10 &
-#20
-b1 =
-b1 @
-18
-bz0000001 (
-10
-b111100 !
-b111100 )
-b11 ;
+#40
+1+
+b1001 !
+b1001 *
+b1100 ,
 b1100 /
-b10 :
-b10 ?
-b1101 -
-b1101 2
-b10 .
-b10 3
-b1110 1
-b1110 4
-b1101 ,
-b10 7
-b1111 +
+b10 (
+b10 -
+b101 )
+b101 .
 0%
-b101101 $
-b101101 '
+b110 $
+b110 '
+b11 #
+b11 &
+#50
+b1100 !
+b1100 *
+b1111 ,
+b1111 /
+b100 (
+b100 -
+b11 )
+b11 .
+1%
+b111 $
+b111 '
+b100 #
+b100 &
+#60
+0+
+b1111 !
+b1111 *
+b0 ,
+b0 /
+b0 (
+b0 -
+b1111 )
+b1111 .
+0%
+b110 $
+b110 '
+b1001 #
+b1001 &
+#70
+1+
+1"
+b1110 ,
+b1110 /
+b1110 !
+b1110 *
+b1111 (
+b1111 -
+b0 )
+b0 .
+b1111 $
+b1111 '
 b1111 #
 b1111 &
-#30
-b11 =
-b11 @
-b100010 !
-b100010 )
-b10 ;
-b10 /
-b100 -
-b100 2
-b1001 .
-b1001 3
-b1 :
-b1 ?
-b1011 1
-b1011 4
-b0 7
-b100 +
-b1 6
-1%
-b1101 $
-b1101 '
-b10100 #
-b10100 &
-#40
-b1 ;
-b0 =
-b0 @
-08
-bz0000000 (
-00
-b10111 !
-b10111 )
-b111 /
-b0 -
-b0 2
-b111 .
-b111 3
-b0 1
-b0 4
-b1 ,
-b1 7
-b110 +
-b0 6
-0%
-b10001 $
-b10001 '
-b110 #
-b110 &
-#50
-b1100 =
-b1100 @
-b10001111 !
-b10001111 )
-b1111 /
-b1000 ;
-b1111 .
-b1111 3
-b10 9
-b10 >
-b100 :
-b100 ?
-b11 ,
-b110 7
-b1100 +
-b10 6
-b1100011 $
-b1100011 '
-b101100 #
-b101100 &
-#60
-18
-b111 U
-b111 X
-1P
-1D
-bz0000111 (
-10
-1H
-b1000 1
-b1000 4
-1<
-b1111 =
-b1111 @
-b1111 I
-b1111 L
-b100000111000011 !
-b100000111000011 )
-b100 S
-b11 /
-b1100 ;
-b1 G
-b11 R
-b11 W
-b100 -
-b100 2
-b1011 .
-b1011 3
-b1100 9
-b1100 >
-b11 :
-b11 ?
-b1 E
-b1 J
-b1110 F
-b1110 K
-b1111 ,
-b1100 7
-b1111 C
-b11 O
-b100 +
-b1111 6
-b1 B
-b11111111001111 $
-b11111111001111 '
-b111110100 #
-b111110100 &
-#70
-0D
-0<
-b0 =
-b0 @
-08
-b1 a
-b1 d
-1\
-1P
-00
-bz0001100 (
-b0 1
-b0 4
-b1000 I
-b1000 L
-1T
-1H
-b11 U
-b11 X
-b1110010100111111000 !
-b1110010100111111000 )
-b111 _
-b1000 /
-b1111 ;
-b1001 G
-b10 S
-b110 ^
-b110 c
-b0 -
-b0 2
-b1000 .
-b1000 3
-b0 9
-b0 >
-b1111 :
-b1111 ?
-b1100 E
-b1100 J
-b1 F
-b1 K
-b1000 Q
-b1000 V
-b1 R
-b1 W
-b1000 ,
-b1011 7
-b1101 C
-b1000 O
-b110 [
-b0 +
-b100 6
-b1100 B
-b1001 N
-b1101000110110111000 $
-b1101000110110111000 '
-b1001110001000000 #
-b1001110001000000 &
 #80
-b0 m
-b0 p
-b0 U
-b0 X
-0h
-0\
-0P
-bz0000000 (
-0`
-b0 I
-b0 L
-0H
-0T
-b0 a
-b0 d
-b10100011110101110000101110 !
-b10100011110101110000101110 )
-b1100 G
-b10 ;
-b101 S
-b1111 _
-b1000 k
-b10 w
-b1110 /
-b0 E
-b0 J
-b1100 F
-b1100 K
-b1101 .
-b1101 3
-b10 :
-b10 ?
-b0 Q
-b0 V
-b101 R
-b101 W
-b1111 ^
-b1111 c
-b1000 j
-b1000 o
-b10 v
-b10 {
-b11 1
-b11 4
-b101 ,
-b0 7
-b0 C
-b0 O
-b0 [
-b1000 +
-b10 6
-b101 N
-b1111 Z
-b1000 f
-b10 r
-1%
-b101 $
-b101 '
-b10100011110101110000101000 #
-b10100011110101110000101000 &
-#90
-b1 a
-b1 d
-1\
-1D
-bz0001010 (
-1<
-1T
-b1011 I
-b1011 L
-b1110 =
-b1110 @
-b1110 U
-b1110 X
-b10010101000101111 !
-b10010101000101111 )
-b10 ;
-b1010 G
-b10 S
-b1 _
-b0 k
-b0 w
-b1111 /
-b1111 .
-b1111 3
-b11 9
-b11 >
-b1100 :
-b1100 ?
-b100 E
-b100 J
-b1 F
-b1 K
-b11 Q
-b11 V
-b1100 R
-b1100 W
-b0 ^
-b0 c
-b0 j
-b0 o
-b0 v
-b0 {
-b0 1
-b0 4
-b100 ,
-b11 7
-b101 C
-b111 O
-b1011 +
-b1111 6
-b100 B
-b1011 N
-b0 Z
-b0 f
-b0 r
-0%
-b111010100110100 $
-b111010100110100 '
-b1011010011111011 #
-b1011010011111011 &
-#100
-0\
-0D
-bz0000000 (
-0<
-0T
-b0 I
-b0 L
-b0 a
-b0 d
-b0 =
-b0 @
-b0 U
-b0 X
-b10101000001100010 !
-b10101000001100010 )
-b110 ;
-b0 G
-b101 S
-b1 _
-b10 /
-b1 .
-b1 3
-b0 9
-b0 >
-b110 :
-b110 ?
-b0 E
-b0 J
-b0 F
-b0 K
-b0 Q
-b0 V
-b101 R
-b101 W
-b1 ^
-b1 c
-b11 1
-b11 4
-b0 ,
-b0 7
-b0 C
-b0 O
-b1 +
-b110 6
-b0 B
-b101 N
-b1 Z
-1%
-b0 $
-b0 '
-b10101000001100001 #
-b10101000001100001 &
-#110
-1""
-1t
-1h
-1\
-1P
-1D
-18
-bz1111111 (
-10
-1<
-1H
-1T
-1`
-1l
-1x
-1"
-b1111 G
-b1111 k
-b1111 w
-b1111 %"
-b1111 =
-b1111 @
-b1111 I
-b1111 L
-b1111 U
-b1111 X
-b1111 a
-b1111 d
-b11111111111111111111111111111110 !
-b11111111111111111111111111111110 )
-b1111 m
-b1111 p
-b1111 y
-b1111 |
-b1111 &"
-b1111 )"
-b1110 /
-b1111 ;
-b1111 S
-b1111 _
-b1111 -
-b1111 2
-b0 .
-b0 3
-b1111 9
-b1111 >
-b0 :
-b0 ?
-b1111 E
-b1111 J
-b1111 Q
-b1111 V
-b0 R
-b0 W
-b1111 ]
-b1111 b
-b0 ^
-b0 c
-b1111 i
-b1111 n
-b1111 u
-b1111 z
-b1111 #"
-b1111 '"
-b1110 1
-b1110 4
+b1111 !
+b1111 *
 b1111 ,
-b1111 7
-b1111 C
-b1111 O
-b1111 [
-b1111 g
-b1111 s
-b1111 !"
-b1111 +
-b1111 6
-b1111 B
-b1111 N
-b1111 Z
-b1111 f
-b1111 r
-b1111 ~
-0%
-b11111111111111111111111111111111 $
-b11111111111111111111111111111111 '
-b11111111111111111111111111111111 #
-b11111111111111111111111111111111 &
-#120
+b1111 /
+1%
+#90

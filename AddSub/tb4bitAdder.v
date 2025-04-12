@@ -20,7 +20,8 @@ initial begin
     A=4'd3; B=4'd6; Cin=0;  #10;
     A=4'd4; B=4'd7; Cin=1;  #10;
     A=4'd9; B=4'd6; Cin=0;  #10;
-    A=4'd15;B=4'd15;Cin=0;  #10; 
+    A=4'd15;B=4'd15;Cin=0;  #10;
+    A=4'd15;B=4'd15;Cin=1;  #10;
 
     $finish;
 end
