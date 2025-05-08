@@ -1,6 +1,6 @@
-# 32 bit Adder Subtractor  
+# 32 bit Adder-Subtractor  
 
-The 32bit operands in the register can be interpreted as signed or unsigned depending on the sign status input.  
+The 32bit operands in the register can be interpreted as signed or unsigned depending on the sign status input "Si".  
 Implements Addition or Subtraction of two 32 bit operands.  
 
 ## Addition  
@@ -19,7 +19,7 @@ A - Minuend
 B - Subtrahend  
 D - Difference  
 
-Arithmetic Subtraction is done by adding the subtrahend in it's 2's complement form. 
+Arithmetic Subtraction is performed by adding the subtrahend in it's 2's complement form with Minuend. 
 For operation code = 1, Subtraction is performed.
 
 Unsigned : 

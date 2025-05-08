@@ -28,7 +28,9 @@ module tb_32bitAddSub;
   end
 
   initial begin
-   /* // Test for Unsigned Addition
+   /* 
+
+    // Test for Unsigned Addition
     D = 0; Si=0;
     // Test Case 1: 5 + 3 +1(Cin)= 9
     A = 32'h00000005; B = 32'h00000003; 
@@ -132,9 +134,6 @@ module tb_32bitAddSub;
     Cin = 0;    
     A = 32'h00000004; B = 32'h7FFFFFFF;
     #10;
-    $finish;
-    */
-
 
     // Test for Signed(2's Complement)Subtraction 
     D = 1; Si=1;Cin=0;
@@ -175,6 +174,7 @@ module tb_32bitAddSub;
     A = 32'h7FFFFFFD; B = 32'hFFFFFFFD;
     #10;
     $finish;
+*/
   end
 
 endmodule

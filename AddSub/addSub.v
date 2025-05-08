@@ -3,7 +3,7 @@
 //D is the mode port that decides the operation
 module addSub(input [31:0]A,B, input D, Cin,Si, output wire [31:0]S, output Cout,V,So);
 
-//32 bit wire to that connects xor of 32 bit wire B and D
+//32 bit wire that connects xor of 32 bit wire B and D
 wire [31:0] Bs;
 assign Bs = B ^ {32{D}};
 wire C; 
