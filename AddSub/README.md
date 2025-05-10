@@ -25,19 +25,21 @@ For operation code = 1, Subtraction is performed.
 Unsigned : 
 The original operands are 32 bit unsigned numbers. The 2's complement of the subtrahend is found and added with the minuend to obtain difference.  
 
+### 
 The carry-out flag is critical to indicate the result after subtration. In other words the result of unsigned subtraction is a number in sign magnitude representation. It is the programmer's responsibility to interpret the result correctly.  
 
 ex: A = 4'b0000=4'd0; B=4'b1111=4'd15;  
     A-B = A    + 2^4 - B;  
         = 0000 + 0001  
         = 0001  
-    The value stored in D is 2's complement of 0001 which is 1111 and the Cout=0 is to indicate the negative sign  
+    The value stored in D is 2's complement of 1111.  
+    The result should be interpreted as 2's complement of 0001 i.e. 1111(decimal 15) and the Cout=0 is to indicate the negative sign  
 
 
-| Condition | Mathematical result | 32 bit stored value | Carry flag |
-------------|---------------------|---------------------|------------|
-A>=B        |   A-B (Positive)    |    A-B              |       1    |
-A< B        |   A-B (Negative)    |  -(A-B)             |       0    |
+| Condition  | Mathematical result | 32 bit stored value | Carry flag |
+-------------|---------------------|---------------------|------------|
+|A>=B        |   A-B (Positive)    |    A-B              |       1    |
+|A< B        |   A-B (Negative)    |  -(A-B)             |       0    |
 
 Numerical Range : -(2^32 -1) to (2^32 - 1) i.e. -4.294967295×10⁹ to 4.294967295×10⁹  
 
@@ -49,4 +51,13 @@ Actual numerical range: -2^31 to 2^31 - 1.
 
 Overflow V= Cout exor CinMSB. Overflow flag = 1 indicates an invalid signed arithmetic.
 
+## Operation table:  
+|D  |  Si  | Cin | Operation                                               |
+|---|------|-----|---------------------------------------------------------|
+| 0 |  0   |  0  |Unsigned Addition                                        |
+| 0 |  0   |  1  |Unsigned Addition with input carry                       |
+| 0 |  1   |  0  |Signed Addition (operand stored in 2's complement form)  |
+| 0 |  1   |  1  |Signed Addition with input carry                         |
+| 1 |  0   |  x  |Unsigned Subtraction                                     |
+| 1 |  1   |  x  |Signed Subtraction(operand stored in 2's complement form)|
 

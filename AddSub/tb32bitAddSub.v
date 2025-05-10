@@ -29,7 +29,6 @@ module tb_32bitAddSub;
 
   initial begin
    /* 
-
     // Test for Unsigned Addition
     D = 0; Si=0;
     // Test Case 1: 5 + 3 +1(Cin)= 9
@@ -47,21 +46,23 @@ module tb_32bitAddSub;
     A=32'd0; B=32'd0;
     #10;
 
-    // Test Case 2: Edge addition (e.g., 0xFFFFFFFF)
+    //Test Case 4: Edge addition (e.g., 0xFFFFFFFF + 0xFFFFFFFF = 0xFFFFFFFFE)
     A = 32'd4294967295; B = 32'd4294967295;
     Cin = 0;    
     #10;
     
-    // Test Case 3: Edge addition with Cin (e.g., 0xFFFFFFFF +1)
+    //Test Case 5: Edge addition with Cin (e.g., 0xFFFFFFFF + 0xFFFFFFFF +1 = 0xFFFFFFFFF)
     A = 32'd4294967295; B = 32'd4294967295;
     Cin = 1;    
     #10;
 
 
+
+
     
     // Test for Unsigned Subtraction
     D = 1; Si=0;
-    //Test Case 1: 5 - 1= 4
+    //Test Case 1: 5 - 1 = 4
     A = 32'h00000005; B = 32'h00000003; 
     #10;
 
@@ -83,11 +84,12 @@ module tb_32bitAddSub;
 
     //Test Case 6: Low Edge 0 -(2^32 - 1) = 0x00000001
     A = 32'd0; B = 32'd4294967295;
-    #10; */
+    #10;
    
 
 
-   /* 
+
+ 
     // Test for Signed(2's Complement) Addition
     D = 0; Si=1;
     // Test Case 1: 5 + 3 +1(Cin)= 9
@@ -134,6 +136,11 @@ module tb_32bitAddSub;
     Cin = 0;    
     A = 32'h00000004; B = 32'h7FFFFFFF;
     #10;
+
+
+
+
+
 
     // Test for Signed(2's Complement)Subtraction 
     D = 1; Si=1;Cin=0;
